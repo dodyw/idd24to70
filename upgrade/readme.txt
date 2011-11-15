@@ -20,17 +20,23 @@ INSTALLATION
       $db_pass = 'root';
       $db_name = 'indexu';
       $db_host = 'localhost'; 
+
+   and website url
+
+      $website_url = '';
             
-3) Upload indexu_54_to_indexu_deluxe_24 folder. This script is independent from indexu installation, feel free to upload in any locations.
+3) Upload /upgrade folder. This script is independent from indexu installation, feel free to upload in any locations.
 
 4) Run the index.php from browser.
 
 5) Now the database updated. Use phpmyadmin, edit configuration value in lep_config, edit url field to new location (http://www.domain.tld/). Make sure to add slash.
 
-6) Then reset the admin password to 'admin'. Edit lep_user, edit user 'admin', set the password to 
-   c3284d0f94606de1fd2af172aba15bf3
-   
+6) Upload the latest indexu 7 version, run install script. It will detect the database version and upgrade to the latest version.
+
 7) Login into indexu 7 admin panel. Update the category path (admin panel / categories / update category path).
+
+   If necessary, you may need to reset the admin password to 'admin'. Edit lep_user, edit user 'admin', set the password to 
+   c3284d0f94606de1fd2af172aba15bf3
 
 8) Update number of links (admin panel / links / update number of links).
 
